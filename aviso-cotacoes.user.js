@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Aviso Cotações
 // @namespace    http://tampermonkey.net/
-// @version      3.9
+// @version      4.0
 // @description  Consulta planilha em tempo real de forma funcional
 // @match        https://www.sistemaalternativa.com.br/*
 // @updateURL    https://raw.githubusercontent.com/CapCambio/tampermonkey-scripts/main/aviso-cotacoes.user.js
