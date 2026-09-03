@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         Aviso Documento Não Anexado
 // @namespace    http://tampermonkey.net/
-// @version      4.0
+// @version      4.1
 // @description  Modal centralizado moderno com aviso, texto em linha única, botões estilizados e layout atualizado
 // @match        https://www.sistemaalternativa.com.br/*
 // @updateURL    https://raw.githubusercontent.com/CapCambio/tampermonkey-scripts/main/aviso-documento-nao-anexado.user.js
