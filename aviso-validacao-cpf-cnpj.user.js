@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         Aviso Validação CPF/CNPJ
 // @namespace    http://tampermonkey.net/
-// @version      6.1
+// @version      6.2
 // @description  Intercepta clique no Confirmar, exibe aviso se CPF/CNPJ não validado, com modal invisível
 // @match        https://www.sistemaalternativa.com.br/*
 // @updateURL    https://raw.githubusercontent.com/CapCambio/tampermonkey-scripts/main/aviso-validacao-cpf-cnpj.user.js
