@@ -13,7 +13,6 @@
 (function() {
     'use strict';
 
-    // Utilitário para esperar elemento aparecer
     function waitForElement(selector, root = document, timeoutMs = 3000) {
         return new Promise((resolve) => {
             const found = root.querySelector(selector);
@@ -35,7 +34,6 @@
         });
     }
 
-    // Exibe aviso centralizado
     function mostrarAvisoCentralizado(mensagem, botoes = []) {
         const overlay = document.createElement('div');
         overlay.style.position = 'fixed';
@@ -120,7 +118,6 @@
         document.body.appendChild(overlay);
     }
 
-    // Abrir modal invisível e verificar textarea
     async function abrirModalInvisivelELer() {
         const btnAbrir = document.querySelector('button[ng-click="consultarSituacaoCadastral()"]');
         if (!btnAbrir) return null;
@@ -171,7 +168,7 @@
         const scope = angular.element(btn).scope();
         const tipoPessoa = scope?.form?.tipoPessoa ?? '';
 
-        // ✅ regra: estrangeiro não exige validação
+        // estrangeiro não exige validação
         if (tipoPessoa === 'E') {
             scope.form.salvar();
             emProgresso = false;
@@ -207,7 +204,6 @@
                         cor: '#407c6c',
                         corHover: '#356755',
                         acao: () => {
-                            // ✅ corrigido: abrir o modal real
                             const btnModal = document.querySelector('button[ng-click="consultarSituacaoCadastral()"]');
                             if (btnModal) btnModal.click();
                         }
